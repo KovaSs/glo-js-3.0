@@ -4,14 +4,14 @@
 let week = [' Sunday', ' Monday', ' Tuesday', ' Wednesday', ' Thursday', ' Friday', ' Saturday'];
 
 /*Вывести на экран все дни недели*/
-document.getElementById('week').innerHTML = week;
+document.getElementById('week').textContent = week;
 
 /*Каждый из них с новой строчки*/
 for (let i = 0; i < week.length; i++) {
 	let day = document.createElement('div'),
 			divPos = document.getElementById('newStr');
 	day.className = `div_${[i]}`;
-	day.innerHTML = `${week[i]}`;
+	day.textContent = `${week[i]}`;
 	divPos.appendChild(day);
 }
 
@@ -26,11 +26,11 @@ for (let i = 0; i < week.length; i++) {
 			day.style.fontWeight = 'bold';
 			day.style.color = 'red'; // Для лучшего восприятия, в ТЗ - этого нет
 			day.className = `div_${[i]}`;
-			day.innerHTML = `${week[i]}`;
+			day.textContent = `${week[i]}`;
 			divPos.appendChild(day);
 	} else if (i < week.length-1) {
 		day.className = `div_${[i]}`;
-		day.innerHTML = `${week[i]}`;
+		day.textContent = `${week[i]}`;
 		divPos.appendChild(day);
 		} else { 
 			// Проверка на субботу
@@ -39,7 +39,7 @@ for (let i = 0; i < week.length; i++) {
 			day.style.fontWeight = 'bold';
 			day.style.color = 'red'; // Для лучшего восприятия, в ТЗ - этого нет
 			day.className = `div_${[i]}`;
-			day.innerHTML = `${week[i]}`;
+			day.textContent = `${week[i]}`;
 			divPos.appendChild(day);
 		}
 }
@@ -57,11 +57,11 @@ for (let i = 0; i < week.length; i++) {
 		dayNow.style.fontWeight = 'bold'; // Для лучшего восприятия, в ТЗ - этого нет
 		dayNow.style.color = 'red'; // Для лучшего восприятия, в ТЗ - этого нет
 		dayNow.className = `div_${[i]}`;
-		dayNow.innerHTML = `${week[i]}`;
+		dayNow.textContent = `${week[i]}`;
 		divPos.appendChild(dayNow);
 	} else {
 	dayNow.className = `div_${[i]}`;
-	dayNow.innerHTML = `${week[i]}`;
+	dayNow.textContent = `${week[i]}`;
 	divPos.appendChild(dayNow);
 	}
 }
