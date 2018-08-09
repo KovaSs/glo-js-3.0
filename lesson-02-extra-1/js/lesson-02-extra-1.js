@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /* 1) Создать массив week и записать в него дни недели в виде строк*/
 let week = [' Sunday', ' Monday', ' Tuesday', ' Wednesday', ' Thursday', ' Friday', ' Saturday'];
 
@@ -11,7 +13,7 @@ for (let i = 0; i < week.length; i++) {
 	day.className = `div_${[i]}`;
 	day.innerHTML = `${week[i]}`;
 	divPos.appendChild(day);
-};
+}
 
  /*Выходные дни - жирным шрифтом (суббота, воскресенье)*/
  for (let i = 0; i < week.length; i++) {
@@ -19,7 +21,7 @@ for (let i = 0; i < week.length; i++) {
 				divPos = document.getElementById('weekend');
 	// Проверка на воскресенье, т.к. по спецификации первый день недели - это воскресенье, и оно имеет индекс 0
 	if (i == 0) {
-		day = document.createElement('div'),
+		day = document.createElement('div');
 			divPos = document.getElementById('weekend');
 			day.style.fontWeight = 'bold';
 			day.style.color = 'red'; // Для лучшего восприятия, в ТЗ - этого нет
@@ -32,7 +34,7 @@ for (let i = 0; i < week.length; i++) {
 		divPos.appendChild(day);
 		} else { 
 			// Проверка на субботу
-			day = document.createElement('div'),
+			day = document.createElement('div');
 			divPos = document.getElementById('weekend');
 			day.style.fontWeight = 'bold';
 			day.style.color = 'red'; // Для лучшего восприятия, в ТЗ - этого нет
@@ -40,7 +42,7 @@ for (let i = 0; i < week.length; i++) {
 			day.innerHTML = `${week[i]}`;
 			divPos.appendChild(day);
 		}
-};
+}
 
 /*Текущий день - курсивом*/
 for (let i = 0; i < week.length; i++) {
@@ -62,7 +64,7 @@ for (let i = 0; i < week.length; i++) {
 	dayNow.innerHTML = `${week[i]}`;
 	divPos.appendChild(dayNow);
 	}
-};
+}
 
 /* 2) Создать массив arr = []*/
 let arr = [];
@@ -79,4 +81,4 @@ for (let i = 0; i < 7; i++) {
 	} else {
 
 	}
-};
+}

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 
 function myApp() {
 		let budgetMonth = +prompt('Ваш бюджет на месяц?', 10000), // Замучался вводить значения - поставил дефолтные
@@ -34,7 +35,7 @@ console.log(`Наш магазин называется ${mainList.shopName}`);
 	 		mainList.shopGoods[i] = a;
 	 		console.log(`В магазине будет продаваться ${mainList.shopGoods[i]}`);	
 	 	}
-	};
+	}
 
 /* Запись через цикл while - проверка на уловия реализована для первого прохода (если 2 раза нажать отмена в переменную запишется null)
 	let i = 0,
@@ -100,6 +101,6 @@ do {
 
 	console.log(mainList);
 
-}; 
+}
 
 myApp();
