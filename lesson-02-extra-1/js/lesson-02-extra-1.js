@@ -1,4 +1,4 @@
-/*Создать массив week и записать в него дни недели в виде строк*/
+/* 1) Создать массив week и записать в него дни недели в виде строк*/
 let week = [' Sunday', ' Monday', ' Tuesday', ' Wednesday', ' Thursday', ' Friday', ' Saturday'];
 
 /*Вывести на экран все дни недели*/
@@ -64,17 +64,19 @@ for (let i = 0; i < week.length; i++) {
 	}
 };
 
+/* 2) Создать массив arr = []*/
+let arr = [];
 
+/*Записать в него 7 многозначных чисел в виде строк*/
+for (let i = 0; i < 7; i++) {
+	arr[i] = prompt('Введите число в массив');
 
+/*Вывести в консоль только те, что начинаются с цифры 3 или 7 (Должны присутствовать в массиве)	*/
+	if (arr[i].indexOf('3') == 0) {
+		console.log(arr[i]);
+	} else if (arr[i].indexOf('7') == 0) {
+		console.log(arr[i]);
+	} else {
 
-
-
-
-
-/*let today = new Date(),
-		dayNow = document.createElement('div'),
-		divNow = document.getElementById('dayNow');
-dayNow.innerHTML = `Сегодня ${today.toLocaleDateString()} и это `;
-divNow.appendChild(dayNow);
-
-console.log(today);*/
+	}
+};
