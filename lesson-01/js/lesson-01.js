@@ -19,7 +19,7 @@ let	mainList = {
 			shopName: shop,
 			shopGoods: [],
 			employesrs: {},
-			open
+			open: false
 		};
 
 // Проверка доступа
